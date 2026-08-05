@@ -1083,4 +1083,360 @@ select {
     border: 0;
 
 }
+/* ===================================
+   INNER PAGES STYLES
+   =================================== */
 
+
+/* ---------- PAGE HERO ---------- */
+
+
+.page-hero {
+
+    min-height: 45vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+
+    linear-gradient(
+    rgba(15,23,42,.75),
+    rgba(15,23,42,.75)
+    ),
+
+    url("../images/page-hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: var(--white);
+
+    padding-top: 90px;
+
+}
+
+
+
+.page-hero h1 {
+
+    font-size: clamp(2.5rem,5vw,3.8rem);
+
+    margin-bottom: 15px;
+
+}
+
+
+
+
+
+/* ---------- PROPERTY DETAILS ---------- */
+
+
+.property-details-grid {
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr;
+
+    gap: 50px;
+
+    align-items: start;
+
+}
+
+
+
+
+.property-gallery > img {
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: var(--radius);
+
+}
+
+
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 15px;
+
+    margin-top: 15px;
+
+}
+
+
+
+.gallery-grid img {
+
+    height: 120px;
+
+    width: 100%;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+}
+
+
+
+
+
+.property-summary h2 {
+
+    color: var(--dark-color);
+
+    font-size: 2rem;
+
+}
+
+
+
+.property-summary h3 {
+
+    color: var(--primary-color);
+
+    font-size: 2rem;
+
+    margin: 15px 0;
+
+}
+
+
+
+.property-features {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 15px;
+
+    margin: 30px 0;
+
+}
+
+
+
+.property-features div {
+
+    background: var(--light-color);
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+}
+
+
+
+.property-features strong {
+
+    display: block;
+
+    font-size: 1.5rem;
+
+    color: var(--dark-color);
+
+}
+
+
+
+
+
+/* ---------- CONTACT FORM ---------- */
+
+
+.contact-form {
+
+    background: var(--white);
+
+    padding: 35px;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+
+.contact-form div {
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.contact-form label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+}
+
+
+
+.contact-form input,
+.contact-form textarea {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 8px;
+
+    outline: none;
+
+}
+
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+
+    border-color: var(--primary-color);
+
+}
+
+
+
+
+
+/* ---------- CONTACT INFO ---------- */
+
+
+.contact-info {
+
+    margin-top: 30px;
+
+}
+
+
+
+.contact-info p {
+
+    margin-bottom: 15px;
+
+    font-weight: 500;
+
+}
+
+
+
+
+
+/* ---------- MAP ---------- */
+
+
+.map-section {
+
+    padding-bottom: 80px;
+
+}
+
+
+
+.map-placeholder {
+
+    height: 350px;
+
+    background: var(--light-color);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: var(--radius);
+
+    color: var(--text-color);
+
+    font-weight: 600;
+
+}
+
+
+
+
+
+/* ---------- AGENT BUTTONS ---------- */
+
+
+.agent-card .btn {
+
+    margin-top: 15px;
+
+    padding: 10px 22px;
+
+    font-size: .9rem;
+
+}
+
+
+
+
+
+/* ---------- MOBILE INNER PAGES ---------- */
+
+
+@media(max-width:768px){
+
+
+    .property-details-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .property-gallery > img {
+
+        height: 300px;
+
+    }
+
+
+
+    .gallery-grid {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+
+    .property-features {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+}
