@@ -1,0 +1,361 @@
+/* ===================================
+   PAA ESTATES - RESPONSIVE STYLES
+   =================================== */
+
+
+/* ---------- TABLETS ---------- */
+
+
+@media (max-width: 1024px) {
+
+
+    .nav-links {
+
+        gap: 20px;
+
+    }
+
+
+    .search-box {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+
+    .property-grid,
+    .services-grid,
+    .agents-grid,
+    .testimonial-grid {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+
+    .stats-grid {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+
+    .about-grid {
+
+        gap: 40px;
+
+    }
+
+
+
+    .newsletter-box {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .footer-grid {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+
+
+/* ---------- MOBILE DEVICES ---------- */
+
+
+@media (max-width: 768px) {
+
+
+
+    .section {
+
+        padding: 70px 0;
+
+    }
+
+
+
+    .section-heading h2 {
+
+        font-size: 2rem;
+
+    }
+
+
+
+
+
+    /* NAVIGATION */
+
+
+    .navbar {
+
+        height: 75px;
+
+    }
+
+
+
+    .menu-toggle {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 5px;
+
+    }
+
+
+
+    .menu-toggle span {
+
+        width: 28px;
+
+        height: 3px;
+
+        background: var(--dark-color);
+
+        border-radius: 5px;
+
+    }
+
+
+
+
+    .nav-links {
+
+        position: absolute;
+
+        top: 75px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: var(--white);
+
+        flex-direction: column;
+
+        align-items: center;
+
+        padding: 30px 0;
+
+        gap: 25px;
+
+        transform: translateY(-120%);
+
+        transition: .3s ease;
+
+        box-shadow: var(--shadow);
+
+    }
+
+
+
+    .nav-links.active {
+
+        transform: translateY(0);
+
+    }
+
+
+
+    .navbar > .btn {
+
+        display: none;
+
+    }
+
+
+
+
+
+    /* HERO */
+
+
+    .hero {
+
+        min-height: 90vh;
+
+    }
+
+
+
+    .hero h1 {
+
+        font-size: 2.5rem;
+
+    }
+
+
+
+    .hero-actions {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+
+    .btn {
+
+        width: fit-content;
+
+    }
+
+
+
+
+
+    /* SEARCH */
+
+
+    .property-search {
+
+        margin-top: -30px;
+
+    }
+
+
+
+    .search-box {
+
+        grid-template-columns: 1fr;
+
+        padding: 20px;
+
+    }
+
+
+
+
+
+    /* GRIDS */
+
+
+    .property-grid,
+    .services-grid,
+    .agents-grid,
+    .testimonial-grid,
+    .stats-grid,
+    .footer-grid,
+    .about-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+
+
+    /* ABOUT */
+
+
+    .about-content h2 {
+
+        font-size: 2rem;
+
+    }
+
+
+
+
+    /* STATS */
+
+
+    .stat h3 {
+
+        font-size: 2.3rem;
+
+    }
+
+
+
+
+
+    /* NEWSLETTER */
+
+
+    .newsletter-box {
+
+        padding: 35px 20px;
+
+    }
+
+
+
+    .newsletter-form {
+
+        flex-direction: column;
+
+        width: 100%;
+
+    }
+
+
+
+    .newsletter-form input {
+
+        width: 100%;
+
+        min-width: unset;
+
+    }
+
+
+
+}
+
+
+
+
+
+/* ---------- SMALL PHONES ---------- */
+
+
+@media (max-width: 400px) {
+
+
+
+    .container {
+
+        width: 92%;
+
+    }
+
+
+
+    .hero h1 {
+
+        font-size: 2rem;
+
+    }
+
+
+
+    .property-card img {
+
+        height: 220px;
+
+    }
+
+
+
+}
