@@ -1,0 +1,380 @@
+/* ===================================
+   PAA ESTATES - ANIMATIONS
+   =================================== */
+
+
+/* ---------- FADE IN ---------- */
+
+
+.fade-in {
+
+    animation: fadeIn 1s ease forwards;
+
+}
+
+
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* ---------- SLIDE FROM LEFT ---------- */
+
+
+.slide-left {
+
+    animation: slideLeft 1s ease forwards;
+
+}
+
+
+
+@keyframes slideLeft {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(-50px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+
+}
+
+
+
+
+
+/* ---------- SLIDE FROM RIGHT ---------- */
+
+
+.slide-right {
+
+
+    animation: slideRight 1s ease forwards;
+
+
+}
+
+
+
+@keyframes slideRight {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(50px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+
+}
+
+
+
+
+
+/* ---------- SCALE EFFECT ---------- */
+
+
+.scale-up {
+
+
+    animation: scaleUp .8s ease forwards;
+
+
+}
+
+
+
+@keyframes scaleUp {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(.9);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+
+}
+
+
+
+
+
+/* ---------- BUTTON ANIMATION ---------- */
+
+
+.btn {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+
+.btn::before {
+
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -100%;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(255,255,255,.2);
+
+    transition: .4s ease;
+
+
+}
+
+
+
+.btn:hover::before {
+
+
+    left: 100%;
+
+
+}
+
+
+
+
+
+/* ---------- PROPERTY CARD HOVER ---------- */
+
+
+.property-card,
+.service-card,
+.agent-card,
+.testimonial-card {
+
+
+    transition: transform .35s ease,
+                box-shadow .35s ease;
+
+
+}
+
+
+
+.property-card:hover,
+.service-card:hover,
+.agent-card:hover,
+.testimonial-card:hover {
+
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+/* ---------- IMAGE ZOOM ---------- */
+
+
+.property-card img,
+.agent-card img {
+
+
+    transition: transform .5s ease;
+
+
+}
+
+
+
+.property-card:hover img,
+.agent-card:hover img {
+
+
+    transform: scale(1.05);
+
+
+}
+
+
+
+
+
+/* ---------- NAV LINK EFFECT ---------- */
+
+
+.nav-links a {
+
+
+    position: relative;
+
+
+}
+
+
+
+.nav-links a::after {
+
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -5px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--primary-color);
+
+    transition: .3s ease;
+
+
+}
+
+
+
+.nav-links a:hover::after {
+
+
+    width: 100%;
+
+
+}
+
+
+
+
+
+/* ---------- FLOATING EFFECT ---------- */
+
+
+.hero-content {
+
+
+    animation: heroFloat 1.2s ease;
+
+
+}
+
+
+
+@keyframes heroFloat {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(40px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+
+}
+
+
+
+
+
+/* ---------- REDUCED MOTION SUPPORT ---------- */
+
+
+@media (prefers-reduced-motion: reduce) {
+
+
+    *,
+    *::before,
+    *::after {
+
+
+        animation-duration: .01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: .01ms !important;
+
+
+    }
+
+
+}
