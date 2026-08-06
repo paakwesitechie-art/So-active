@@ -321,7 +321,7 @@ select {
     rgba(0,0,0,.55)
     ),
 
-    url("../images/hero.jpg");
+    url("../hero.jpeg");
 
     background-size: cover;
 
